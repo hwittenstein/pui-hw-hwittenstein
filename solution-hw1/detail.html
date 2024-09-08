@@ -6,37 +6,43 @@
   
   <body>
 
-    <img src= "/assets/logo/logo-01.svg" alt="Bun Bun logo" class="logo">
+    <a href="/solution-hw1/products.html"><img src= "/assets/logo/logo-01.svg" alt="Bun Bun logo" class="logo">
     <hr>
     <nav>
-      <p class="nav"><a href="/products.html"></a>PRODUCTS</p>
-      <p class="nav"><a href="/cart.html"></a>CART</p>
+      <ul class="navbar">
+        <li><a href="/solution-hw1/products.html">PRODUCTS</a></li>
+        <li><a href="/solution-hw1/cart.html">CART</a></li>
+      </ul>
     </nav>
     
     <br>
+    
+    <h3>Original cinnamon roll</h3>
+    <div class="detail-page">
+      <img src= "/assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="detail-product-image">
+    
+      <div class="selections">
+        <p id="product-description">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+        <div class="dropdowns">
+            <p class="product-detail">Glazing:</p>
+            <select name="glazing">
+                <option value="Keep original">Keep original</option>
+                <option value="Sugar milk">Sugar milk</option>
+                <option value="Vanilla milk">Vanilla milk</option>
+                <option value="Double chocolate">Double chocolate</option>
+            </select>
+        </div>
+        <div class="dropdowns">
+            <p class="product-detail">Pack size:</p>
+            <select name="pack-size">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+      </div>
 
-    <div>
-      <h3>Original cinnamon roll</h3>
-      <div class="cart-product">
-        <img src= "/assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="detail-product-image">
-        <p class="product-detail">Customize our delicious, hand-made cinnamon roll to your liking!</p>
-      </div>
-      <div>
-        <p class="product-detail">Glazing:</p>
-        <select name="glazing">
-            <option value="Keep original">Keep original</option>
-            <option value="Sugar milk">Sugar milk</option>
-            <option value="Vanilla milk">Vanilla milk</option>
-            <option value="Double chocolate">Double chocolate</option>
-        </select>
-        <p class="product-detail">Pack size:</p>
-        <select name="pack-size">
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
-        </select>
-      </div>
       <div id="detail-finish">
         <p id="detail-price">$2.49</p>
         <button>Add to Cart</button>
