@@ -177,7 +177,7 @@ select {
     flex-direction: column;
     gap: 40px;
     padding-left: 300px;
-    padding-right: 75px;
+    padding-right: 100px;
 }
 
 .cart-product {
