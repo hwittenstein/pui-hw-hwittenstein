@@ -79,7 +79,7 @@ function updatePrice(){
     displayPrice.innerText = "$ " + totalPrice;
 
     // update roll details
-    newRoll = new Roll(rollType, glazeChoice, packChoice, totalPrice);
+    newRoll = new Roll(rollType, glazeChoice, packChoice, basePrice);
 }
 
 class Roll {
