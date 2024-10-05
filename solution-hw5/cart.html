@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<script src="./jss/script.js"></script>
-<script src="./jss/rollsData.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="./jss/script.js" defer></script>
+  <script src="./jss/cart.js" defer></script>
+  <script src="./jss/rollsData.js" defer></script>
+</head>
 
 <body>
 
@@ -25,52 +29,35 @@
 
   <br>
 
-  <div class="cart-list"> <!--contains both products in cart-->
-
-    <div class="cart-product"> <!--image, details, price, remove-->
-      <div class="cart-product-main"> <!--image, details, price-->
-        <img src="assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll" class="cart-product-image">
-        <div class="cart-info"> <!--only details and price-->
-          <div class="cart-info-details"> <!--just details-->
-            <p>Original Cinnamon Roll</p>
-            <p>Glazing: Keep original</p>
-            <p>Pack size: 1</p>
-          </div>
-          <div class="cart-info-price">
-            <p class="cart-price">$2.49</p>
-          </div>
-        </div>
-      </div>
-      <p class="remove">Remove</p>
-    </div>
-
-    <div class="cart-product"> <!--image, details, price, remove-->
-      <div class="cart-product-main"> <!--image, details, price-->
-        <img src="assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double chocolate cinnamon roll" class="cart-product-image">
-        <div class="cart-info"> <!--only details and price-->
-          <div class="cart-info-details"> <!--just details-->
-            <p>Double Chocolate Cinnamon Roll</p>
-            <p>Glazing: Sugar milk</p>
-            <p>Pack size: 6</p>
-          </div>
-          <div class="cart-info-price">
-            <p class="cart-price">$27.45</p>
+  <div class="cart-list"> <!--contains the products in cart-->
+    <div class="cart-sublist"></div>
+    <template id="cart-item-template">
+      <div class="cart-product"> <!--image, details, price, remove-->
+        <div class="cart-product-main"> <!--image, details, price-->
+          <img src="" alt="Cinnamon roll" class="cart-product-image">
+          <div class="cart-info"> <!--only details and price-->
+            <div class="cart-info-details"> <!--just details-->
+              <p class="item-description"></p>
+            </div>
+            <div class="cart-info-price">
+              <p class="cart-price"></p>
+            </div>
           </div>
         </div>
+        <p class="remove">Remove</p>
       </div>
-      <p class="remove">Remove</p>
-    </div>
+    </template>
 
     <hr id="bold-line">
 
     <div id="cart-checkout">
       <div id="cart-price">
         <p>Total</p>
-        <p>$29.94</p>
+        <p class="total-price"></p>
       </div>
       <button id="checkout-button">Checkout</button>
     </div>
-
+  </div>
 </body>
 
 </html>

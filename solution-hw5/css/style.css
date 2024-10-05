@@ -184,6 +184,7 @@ select {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .cart-product-main {
@@ -201,7 +202,7 @@ select {
 
 .cart-info-details {
     margin: auto;
-    width: 100%;
+    width: 450px;
     padding-left: 25px;
 }
 
@@ -214,7 +215,6 @@ select {
 .cart-product-image {
     width: 200px;
     border: solid black 2px;
-    margin-bottom: 10px;
 }
 
 .remove {

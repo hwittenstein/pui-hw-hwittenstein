@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="./jss/script.js"></script>
+  <script src="./jss/cart.js"></script>
+  <script src="./jss/rollsData.js"></script>
+</head>
+
+<body>
+
+  <div class="page-header"> <!--header-->
+    <a href="../solution-hw5-array/index.html"><img src="assets/logo/logo-01.svg" alt="Bun Bun logo" class="logo"></a>
+    <div class="header-right">
+      <nav>
+        <ul class="navbar">
+          <li><a href="../solution-hw5-array/index.html">PRODUCTS</a></li>
+          <li><a href="../solution-hw5-array/cart.html">CART</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <h1>Our hand-made cinnamon rolls</h1>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="cart-list"> <!--contains the products in cart-->
+    <div class="cart-sublist"></div>
+    <template id="cart-item-template">
+      <div class="cart-product"> <!--image, details, price, remove-->
+        <div class="cart-product-main"> <!--image, details, price-->
+          <img src="" alt="Cinnamon roll" class="cart-product-image">
+          <div class="cart-info"> <!--only details and price-->
+            <div class="cart-info-details"> <!--just details-->
+              <p class="item-description"></p>
+            </div>
+            <div class="cart-info-price">
+              <p class="cart-price"></p>
+            </div>
+          </div>
+        </div>
+        <p class="remove">Remove</p>
+      </div>
+    </template>
+
+    <hr id="bold-line">
+
+    <div id="cart-checkout">
+      <div id="cart-price">
+        <p>Total</p>
+        <p class="total-price"></p>
+      </div>
+      <button id="checkout-button">Checkout</button>
+    </div>
+  </div>
+</body>
+
+</html>
