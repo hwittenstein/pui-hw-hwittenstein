@@ -12,7 +12,7 @@ function saveToLocalStorage() {
 
 if (localStorage.getItem('storedRolls') != null) {
     retrieveFromLocalStorage();
-  }
+}
 
 function retrieveFromLocalStorage() {
     const rollsArrayString2 = localStorage.getItem('storedRolls');
