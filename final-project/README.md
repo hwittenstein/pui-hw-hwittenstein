@@ -1,3 +1,108 @@
+# **FP2 \- Evaluation of the Final project**
+
+## Project Description
+
+Aligned with my passion for mental health education and skill-building, I want to create an interactive site that teaches emotional granularity, using an animated radial menu to display the wheel. Clicking on an emotion displays more information such as definitions, examples, coping strategies, exercises, journaling prompts, and more media. Such information will be relevant to each emotion so users can gain a solid understanding of the complexities of granular emotions.
+
+## High-Fi Prototypes
+
+### *Prototype 1*
+
+![Emotions Wheel: Prototype 1](images/prototype-1a-menu.png)
+![Emotions Wheel: Prototype 1](images/prototype-1b-card-excited.png)
+
+The user feedback I received showed that the visuals, colors, and bubble layout served to create a highly engaging, interactive interface. The card format allowed for quick scanning and felt fun to use. Some buttons and icons were not as intuitive as they should be, but the radial menu was easy to navigate and activated System 1 thinking due to its minimalism.  
+
+### *Prototype 2*
+
+![Emotions Wheel: Prototype 2](images/prototype-2a-bubble-menu.png)
+![Emotions Wheel: Prototype 2](images/prototype-2b-card-loving.png)
+
+User feedback for the second prototype revealed that the bubble layout of all of the granular emotions was very fun and invited curiosity. The hover effects and illuminated circles added visual appeal, making the interactions more engaging. The format of the cards (where information and resources can be found) also engaged System 1 but felt more educational than the card interface of Prototype 1. 
+
+## Usability Test
+
+I conducted usability tests with 2 participants, using the think-aloud protocol. I found that some back buttons and icons were unclear in terms of their function, and one participant suggested changing the back button to an X to emphasize that it is closing something. I implemented this in the refined prototype. Participants also felt strongly that the visuals and organization of the emotions were highly engaging, fun to look at, and simple to understand. One participant mentioned that it would be nice to switch between the radial view of the main emotions and the bubble view of granular ones to better understand the hierarchy and nesting. I decided to implement this suggestion, adding a toggle to switch between the radial menu and bubble view for different navigation options. To do this, I added a button at the center of the radial menu to see the exploding bubble view, and a button in the bubble view to switch to the radial menu. 
+
+It was also noted that specific menu functions can be improved: one participant wanted to be able to return to the core menu rather than just the expanded view (with one circle being larger) for a more satisfying experience. I implemented this by adding the option to see the expanded or condensed view of the radial menu. Further, the card format in Prototype 1 was preferred, so I decided to link the emotions in the bubble view to those cards (as opposed to the card shown in Prototype 2). Both participants thought that the card displaying digestible information, like relevant journaling prompts, reading recommendations, and video/podcasts, to learn about a specific emotion was visually pleasing and allowed for scannability.
+
+## Updated Designs
+
+![Emotions Wheel: Refined Design](images/refined-emotions-wheel.png)
+![Emotions Wheel: Refined Design](images/refined-emotions-bubbles.png)
+
+The refined design combines both the radial menu and bubble menu designs so users can better orient themselves within the emotions wheel. Back buttons were changed to X’s to better convey their function in closing elements on the screen. Icons representing the different menu types were incorporated into the design for improved navigation between the views. I also made changes to the card display, making the animations smoother and more intuitive. Additionally, a button was added to the expanded menu view so users can easily return to the main menu that displays only the core emotions. 
+
+## Feedback Summary
+
+In the feedback session during lab, Hedy noted that the hover effects and illuminating buttons are a great way of engaging the audience and are very interactive. She suggested a darker color for text on the cards to improve readability, underlining clickable text for clarity, and repositioning the mode switch button to a corner for better accessibility and intuitiveness. Liz recommended altering colors for nested emotions to signal more specific information and prompting users to "dig deeper" into sub-emotions. She also suggested using similar interactive bubble effects in both the main and sub-emotion views. Christina recommended animations that enhance storytelling and functionality, proposing the use of lines, size variations, and shading to suggest hierarchy and guide users through different levels of the wheel. 
+
+These insights invite adjustments to both visual and interactive aspects of the design. To improve readability and usability, I’ll incorporate a darker text color on the cards and make elements more obviously clickable as suggested. The repositioning of the mode switch button to a corner may also streamline the user experience, making it easier to locate and navigate between the two. For interactivity, I’ll explore adding subtle color changes and prompts when users explore nested emotions, encouraging them to delve into sub-emotions. Enhancing the sub-emotion view with similar bubble interactivity will create a cohesive feel across the platform. Lastly, animation and hierarchy will be adjusted to improve storytelling and structure, drawing attention to the relationships between main emotions and sub-emotions. For example, using lines, varying sizes, and shades can make it easier for users to understand the emotional breakdown while maintaining a visually engaging flow. This feedback will ultimately create a more intuitive, inviting, and impactful experience for users. 
+
+## Milestones
+
+The implementation of the interactive emotions wheel will begin by establishing core structures in React.js, HTML, and CSS, with each playing a different role in creating a seamless, educational, and engaging experience.
+For the front-end foundation, I’ll use HTML to define the site's core structure, ensuring accessibility and semantic organization. CSS will refine the visual aesthetics, creating a fun, inviting space that encourages exploration. This includes thoughtfully choosing color schemes, typographic elements, and layout that reflect the emotional themes of the project. Initial CSS styling will focus on setting up responsive layouts to ensure the site is usable on both desktop and mobile devices.
+
+React.js will be pivotal in handling the interactivity of the emotions wheel, making it feel dynamic and responsive to user input. First, I will explore the React library to integrate animations, possibly using libraries like Framer Motion or React Spring, to bring subtle movement to the wheel. Each segment of the emotions wheel will correspond to a different emotion and will be clickable, displaying information, journaling prompts, and resources relevant to that specific emotion. As users explore each segment, the information about each emotion, alongside exercises and relevant resources, will be displayed interactively.
+
+Additionally, I plan to incorporate a data structure or dataset that categorizes emotions by intensity and type, which will help the wheel to reflect a comprehensive emotional range. In the later stages, the focus will shift to refining these interactions to ensure smooth transitions and responsive feedback, providing users with a satisfying and intuitive experience. The final weeks will involve testing and debugging, as well as ensuring consistency in design and functionality, so that the site effectively serves as an engaging educational tool for emotional granularity. 
+
+### *Implementation Plan*
+
+- [ ] Week 9 Oct 28 \- Nov 1:
+  - [X] FP1 due
+  
+- [ ] Week 10 Nov 4 \- Nov 8:   
+  - [X] FP2 due
+  - [ ] Explore React.js as a library to use for animations
+
+- [ ] Week 11 Nov 11 \- Nov 15:
+  - [ ] FP3 due
+  - [ ] Settle on a dataset to use for all of the emotions
+  - [ ] Start working in React.js to develop the site's core functions
+
+- [ ] Week 12 Nov 18 \- Nov 22: 
+  - [ ] Refine CSS and HTML to make the site visually pleasing
+  - [ ] Continue adding animations and interactions in JS 
+
+- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] Thanksgiving
+  - [ ] Take a much needed break to rest and recharge
+
+- [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] Make final refinements
+  - [ ] FP4 due 
+
+### *Libraries and Other Components*
+
+List the JS libraries and other components (if applicable) that you plan to use. 
+* 
+- React.js for animations and intuitive interactive elements
+- Framer Motion or React Spring for subtle movements and seamless animations
+
+## Generative AI Use Plan
+
+I will use ChatGPT primarily for troubleshooting, and refining complex code logic. ChatGPT can help me brainstorm ways to structure the data for the emotions wheel, offer guidance on improving the user interface based on feedback, and work through complex logic. It’s particularly useful when I need assistance with CSS animations or React component structures that require step-by-step explanations or creative approaches to interactivity.
+
+However, I won’t rely on ChatGPT for highly specific and nuanced UX/UI decisions that require user testing and iterative design based on human feedback. While ChatGPT can provide general design suggestions, it may not fully capture subtle user needs or insights that come from contextual testing. Therefore, for fine-tuning the interface based on how users interact with the wheel, I will still depend on direct user feedback. I will also not use ChatGPT to write my code for me, as it can often produce incorrect or poorly stylized code and it would remove the learning experience from this project. 
+
+### *Tool Use*
+
+ What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
+
+* ChatGPT  
+  * I will use it for troubleshooting and refining complex code logic because it can help me improve interface elements based on feedback and think through complex structures and logic.   
+  * I will not use it for design decisions or writing code from scratch because it might not be able to help me with nuanced, emotionally charged UI/UX decisions and may use syntax that does not align with industry standards.
+
+### *Responsible Use*
+
+To use generative AI responsibly, I will ensure that the technology supports my goals without compromising creativity or accuracy. While generative AI can provide suggestions for design and code, it is up to me to make those decisions based on my knowledge, intuition, and research. I’ll be careful not to let AI outputs override my more nuanced decisions that better align with my vision and the site’s purpose. As for accuracy, I will be cautious of hallucinations and fact-check the information that AI produces. Especially for complex interactions or design-centered functionalities, I will review, test, and adjust code as necessary to ensure reliability and encourage my own learning. If I use AI, I’ll be transparent about where and how it was applied.  
+
+
+---
+
+
 # **FP1 \- Proposal for Critique**
 
 ## Idea Sketches
