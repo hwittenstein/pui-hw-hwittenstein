@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Emotions Wheel: Hurt</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/anger.css" rel="stylesheet" type="text/css">
+<script src="./jss/anger.js"></script>
+<script src="./jss/gsap.min.js"></script>
+
+<body>
+    <div class="container">
+        <button class="anger" id="anger-bubble-large">Anger</button>
+        <div class="sub-menu">
+            <button class="anger" id="critical-bubble">Critical</button>
+            <button class="anger" id="mad-bubble">Mad</button>
+            <button class="anger" id="rageful-bubble">Rageful</button>
+            <button class="anger" id="frustrated-bubble">Frustrated</button>
+            <button class="anger" id="hurt-bubble-selected">Hurt</button>
+        </div>
+
+        <button class="close-button">
+            <img src="../final-project/images/mac-os-close.png" alt="Close">
+        </button>
+
+        <div class="anger-card">
+            <div class="card-header"> <!--emotion, secondary emotions-->
+                <h1>Hurt</h1>
+                <div class="card-sub-header">
+                    <h2>Rejected</h2>
+                    <h2>Jealous</h2>
+                </div>
+            </div>
+            <div class="card-content"> <!--definition, write, read, hear-->
+                <p class="definition">That feeling when someone did something that harmed or offended you.</p>
+
+                <div class="resources">
+                    <h3>Write about it</h3>
+                    <div class="anger-tiles-outer">
+                        <div class="anger-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="anger-tile"> <!--just one tile-->
+                                <p>What is hurting me right now?</p>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <p>How does hurt show up in my body?</p>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <p>What are helpful ways to respond to hurt?</p>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <p>What can I learn from feeling hurt?</p>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="resources">
+                    <h3>Read about it</h3>
+                    <div class="anger-tiles-outer">
+                        <div class="anger-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="anger-tile"> <!--just one tile-->
+                                <a href="https://fi.edu/en/blog/science-emotions-understanding-anger" target="_blank">
+                                    <p>Science of Emotions: Anger</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <a href="https://www.goodreads.com/book/show/122817166-this-was-meant-to-find-you" target="_blank">
+                                    <p>This Was Meant to Find You</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <a href="https://www.goodreads.com/book/show/60153064-when-you-re-ready-this-is-how-you-heal" target="_blank">
+                                    <p>This Is How You Heal</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <a href="https://www.goodreads.com/book/show/12377178-what-doesn-t-kill-us" target="_blank">
+                                    <p>What Doesn't Kill Us</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="resources">
+                    <h3>Hear about it</h3>
+                    <div class="anger-tiles-outer">
+                        <div class="anger-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="anger-tile"> <!--just one tile-->
+                                <p>Making Life Hurt Less</p>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <p>It Hurts to Hurt Someone</p>
+                            </div>
+                            <div class="tile" id="anger-tile">
+                                <p>Your Power to Heal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>

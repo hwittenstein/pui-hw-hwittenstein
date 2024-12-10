@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Emotions Wheel: Vulnerable</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/fear.css" rel="stylesheet" type="text/css">
+<script src="./jss/fear.js"></script>
+<script src="./jss/gsap.min.js"></script>
+
+<body>
+    <div class="container">
+        <button class="fear" id="fear-bubble-large">Fear</button>
+        <div class="sub-menu">
+            <button class="fear" id="overwhelmed-bubble">Overwhelmed</button>
+            <button class="fear" id="embarrassed-bubble">Embarrassed</button>
+            <button class="fear" id="uncertain-bubble">Uncertain</button>
+            <button class="fear" id="insecure-bubble">Insecure</button>
+            <button class="fear" id="vulnerable-bubble-selected">Vulnerable</button>
+        </div>
+
+        <button class="close-button">
+            <img src="../final-project/images/mac-os-close.png" alt="Close">
+        </button>
+
+        <div class="fear-card">
+            <div class="card-header"> <!--emotion, secondary emotions-->
+                <h1>Vulnerable</h1>
+                <div class="card-sub-header">
+                    <h2>Self-conscious</h2>
+                    <h2>Seen</h2>
+                </div>
+            </div>
+            <div class="card-content"> <!--definition, write, read, hear-->
+                <p class="definition">That feeling when you show up as your truest self. You’re putting yourself out there.</p>
+
+                <div class="resources">
+                    <h3>Write about it</h3>
+                    <div class="fear-tiles-outer">
+                        <div class="fear-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="fear-tile"> <!--just one tile-->
+                                <p>Who do I feel most vulnerable with?</p>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <p>How do I feel when I am being my truest self?</p>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <p>What would prevent me from being vulnerable?</p>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <p>How do I feel after being vulnerable?</p>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="resources">
+                    <h3>Read about it</h3>
+                    <div class="fear-tiles-outer">
+                        <div class="fear-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="fear-tile"> <!--just one tile-->
+                                <p>Science of Emotions: Vulnerable</p>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <a href="https://brenebrown.com/book/atlas-of-the-heart/" target="_blank">
+                                    <p>Atlas of the Heart</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <a href="https://brenebrown.com/book/daring-greatly/" target="_blank">
+                                    <p>Daring Greatly</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <a href="https://www.shambhala.com/daring-to-trust-469.html?srsltid=AfmBOoqhmABoXW7pijbjXtXouLVOV739quzCS8V_Lfaf1o-OkqrjxyQU" target="_blank">
+                                    <p>Daring to Trust</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="resources">
+                    <h3>Hear about it</h3>
+                    <div class="fear-tiles-outer">
+                        <div class="fear-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="fear-tile"> <!--just one tile-->
+                                <a href="https://www.ted.com/talks/brene_brown_the_power_of_vulnerability?subtitle=en" target="_blank">
+                                    <p>The Power of Vulnerability</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <a href="https://www.ted.com/talks/brene_brown_listening_to_shame?subtitle=en" target="_blank">
+                                    <p>Listening to Shame</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="fear-tile">
+                                <a href="https://www.ted.com/talks/haley_skiko_how_vulnerability_unleashes_freedom?subtitle=en" target="_blank">
+                                    <p>How Being Vulnerable Unleashes Freedom</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>

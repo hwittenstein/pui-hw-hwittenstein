@@ -1,0 +1,241 @@
+body {
+    font-family: Poppins;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* MAIN MENU ******************************************************* */
+.main-menu {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for transition */
+.main-menu.slide-in {
+    transition: transform 0.8s ease-out;
+} 
+
+.menu-content {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center center;
+    margin: 100vh auto;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 600;
+    width: 130px;
+    height: 130px;
+    flex-shrink: 0;
+    border-radius: 300px;
+    border-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-origin: center center;
+}
+
+.joy  {
+    background-color: #ffc145;
+}
+
+.peace {
+    background-color: #c870ff;
+}
+
+.fear {
+    background-color: #ff5bb5;
+}
+
+.sadness {
+    background-color: #71e5ff;
+}
+
+.disgust {
+    background-color: #72ff7e;
+}
+
+.anger {
+    background-color: #ff4649;
+}
+
+/* Positioning buttons */
+#joy-bubble {
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+#joy-bubble:hover {
+    box-shadow: 0px 0px 40px 0px rgba(255, 193, 69, 0.40);
+}
+
+#fear-bubble {
+    top: 72%;
+    left: 65%;
+    transform: translate(-40%, -20%);
+}
+
+#sadness-bubble {
+    top: 72%;
+    left: 35%;
+    transform: translate(-60%, -20%);
+}
+
+#disgust-bubble {
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+#anger-bubble {
+    top: 28%;
+    left: 35%; 
+    transform: translate(-60%, -80%);
+}
+
+#peace-bubble {
+    top: 28%;
+    left: 65%;
+    transform: translate(-40%, -80%);
+}
+
+/* iPad display (landscape) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 20px;  /* adjusted padding for smaller screens */
+    }
+}
+
+/* SUB-EMOTIONS WITH CARD ******************************************************* 
+********************************************************************************* */
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
+    padding: 40px;
+    box-sizing: border-box;
+    transition: transform 0.8s ease-out; /* for sliding effect */
+}
+
+.sub-menu {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.close-button {
+    width: 76px;
+    height: 76px;
+    display: flex;
+    margin-left: 860px;
+    flex-shrink: 0;
+}
+
+/* Emotion card styles ********************************************* */
+.card-header {
+    display: flex;
+    padding: 32px 16px 0px 0px;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: 36px 36px 0px 0px; 
+    font-weight: 400;   
+}   
+
+.card-sub-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    color: #1E1E1E;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.8;
+    mix-blend-mode: hard-light;
+}
+
+h3 {
+   font-size: 22px; 
+   font-weight: 600;
+   line-height: 20px;
+}
+
+.card-content {
+    overflow-y: auto;
+}
+
+.definition {
+    font-size: 22px;
+    font-weight: 500;
+    padding-right: 16px;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.tile {
+    display: flex;
+    flex-direction: row;
+    text-align: top;
+    width: 160px;
+    height: 200px;
+    border-radius: 36px;
+    padding: 0px 24px 0px 24px;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;      
+}
+
+.tile a {
+    text-decoration: none;
+    color: inherit;
+}

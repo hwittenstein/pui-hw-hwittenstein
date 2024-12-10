@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Emotions Wheel: Nurturing</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/peace.css" rel="stylesheet" type="text/css">
+<script src="./jss/peace.js"></script>
+<script src="./jss/gsap.min.js"></script>
+
+<body>
+    <div class="container">
+        <button class="peace" id="peace-bubble-large">Peace</button>
+        <div class="sub-menu">
+            <button class="peace" id="thoughtful-bubble">Thoughtful</button>
+            <button class="peace" id="nurturing-bubble-selected">Nurturing</button>
+            <button class="peace" id="accepting-bubble">Accepting</button>
+            <button class="peace" id="optimistic-bubble">Optimistic</button>
+            <button class="peace" id="content-bubble">Content</button>
+        </div>
+
+        <button class="close-button">
+            <img src="../final-project/images/mac-os-close.png" alt="Close">
+        </button>
+
+        <div class="peace-card">
+            <div class="card-header"> <!--emotion, secondary emotions-->
+                <h1>Nurturing</h1>
+                <div class="card-sub-header">
+                    <h2>Loved</h2>
+                    <h2>Intimate</h2>
+                </div>
+            </div>
+            <div class="card-content"> <!--definition, write, read, hear-->
+                <p class="definition">That feeling when you want to care for a person or thing that matters to you. You want their needs to be met.</p>
+
+                <div class="resources">
+                    <h3>Write about it</h3>
+                    <div class="peace-tiles-outer">
+                        <div class="peace-tiles">
+                            <div class="tile" id="peace-tile">
+                                <p>What am I nurturing right now?</p>
+                            </div>
+                            <div class="tile" id="peace-tile">
+                                <p>Who makes me feel loved?</p>
+                            </div>
+                            <div class="tile" id="peace-tile">
+                                <p>How do I care for others?</p>
+                            </div>
+                            <div class="tile" id="peace-tile">
+                                <p>What actions make me feel nurtured?</p>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="resources">
+                    <h3>Read about it</h3>
+                    <div class="peace-tiles-outer">
+                        <div class="peace-tiles">
+                            <div class="tile" id="peace-tile"> <!--just one tile-->
+                                <p>Science of Emotions: Nurturing</p>
+                            </div>
+                            <div class="tile" id="peace-tile">
+                                <p>All About Love</p>
+                            </div>
+                            <div class="tile" id="peace-tile">
+                                <p>The Art of Loving</p>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="resources">
+                    <h3>Hear about it</h3>
+                    <div class="peace-tiles-outer">
+                        <div class="peace-tiles">
+                            <div class="tile" id="peace-tile"> <!--just one tile-->
+                                <p>A Better Way to Talk About Love</p>
+                            </div>
+                            <div class="tile" id="peace-tile">
+                                <p>How to Love and Be Loved</p>
+                            </div>
+                            <div class="tile" id="peace-tile">
+                                <p>The Power of Caring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>

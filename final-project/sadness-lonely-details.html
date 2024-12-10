@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Emotions Wheel: Lonely</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/sadness.css" rel="stylesheet" type="text/css">
+<script src="./jss/sadness.js"></script>
+<script src="./jss/gsap.min.js"></script>
+
+<body>
+    <div class="container">
+        <button class="sadness" id="sadness-bubble-large">Sadness</button>
+        <div class="sub-menu">
+            <button class="sadness" id="gloomy-bubble">Gloomy</button>
+            <button class="sadness" id="miserable-bubble">Miserable</button>
+            <button class="sadness" id="lost-bubble">Lost</button>
+            <button class="sadness" id="depressed-bubble">Depressed</button>
+            <button class="sadness" id="lonely-bubble-selected">Lonely</button>
+        </div>
+
+        <button class="close-button">
+            <img src="../final-project/images/mac-os-close.png" alt="Close">
+        </button>
+
+        <div class="sadness-card">
+            <div class="card-header"> <!--emotion, secondary emotions-->
+                <h1>Lonely</h1>
+                <div class="card-sub-header">
+                    <h2>Abandoned</h2>
+                    <h2>Isolated</h2>
+                </div>
+            </div>
+            <div class="card-content"> <!--definition, write, read, hear-->
+                <p class="definition">That feeling when you think no one cares about you.</p>
+
+                <div class="resources">
+                    <h3>Write about it</h3>
+                    <div class="sadness-tiles-outer">
+                        <div class="sadness-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="sadness-tile"> <!--just one tile-->
+                                <p>When do I feel the most alone?</p>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <p>How does loneliness affect who I am?</p>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <p>What do I learn from loneliness?</p>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <p>What makes me feel less lonely?</p>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+
+                <div class="resources">
+                    <h3>Read about it</h3>
+                    <div class="sadness-tiles-outer">
+                        <div class="sadness-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="sadness-tile"> <!--just one tile-->
+                                <a href="https://www.wired.com/story/weird-science-of-loneliness-brains/" target="_blank">
+                                    <p>Science of Emotions: Loneliness</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <a href="https://www.graywolfpress.org/books/age-loneliness" target="_blank">
+                                    <p>The Age of Loneliness</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <a href="https://www.goodreads.com/book/show/63354357-made-for-people" target="_blank">
+                                    <p>Made for People</p>
+                                </a>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <a href="https://www.goodreads.com/book/show/845386.Journal_of_a_Solitude" target="_blank">
+                                    <p>Journal of a Solitude</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="resources">
+                    <h3>Hear about it</h3>
+                    <div class="sadness-tiles-outer">
+                        <div class="sadness-tiles"> <!--one row of tiles-->
+                            <div class="tile" id="sadness-tile"> <!--just one tile-->
+                                <p>How to Cope with Loneliness</p>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <p>Why You Should Talk to Strangers</p>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <p>The Moth</p>
+                            </div>
+                            <div class="tile" id="sadness-tile">
+                                <p>The Lonely Hour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
