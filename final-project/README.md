@@ -2,58 +2,50 @@
 
 ## Part 1: Website Description
 
-Describe your website (300 words).
+My website is an emotions wheel that aims to teach emotional granularity and expose people to the value of labeling emotions. The target audience is anyone 16 years old and up who is interested in expanding their emotional vocabulary. Recognizing, describing, and expressing emotions is crucial for developing healthy relationships with ourselves and others, yet it is a skill rarely taught in school or even at home. The emotions wheel aims to educate users about a variety (though non-exhaustive) of emotions under the umbrella of primary emotions we are familiar with: joy, fear, anger, sadness, peace, and disgust. 
 
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+Within each category is a host of even more specific emotions that help us more accurately express how we’re feeling. The more accurate we can get, the richer and more vibrant our emotional lives can be. Within each emotion, users can read a quick, relatable definition (not that scientific stuff that’s hard to process) that conveys the essence of the emotion. They can also explore related journaling prompts and resources, some of which direct them to external sites where they can dive deeper and learn more.  
+
+The emotions wheel offers an engaging, easy-to-use, and educational experience for users to come away with as much knowledge as they want—whether they want a quick overview or a deep dive into a specific emotion. The use of bright colors, hover effects, animations, and page transitions creates visually pleasing interactions. The simplicity of the site makes it easy to digest information and stay focused on what matters, so the goal of improving one’s emotional granularity can be achieved.
 
 ## Part 2: User Interaction
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. Hover. Hover over bubble on index.html and bubble scales up and glows.
+2. Click. Click on bubble on index.html and it navigates to corresponding emotions page (e.g., clicking on Joy takes you to joy-connected-details.html).
+3. Scroll. Scroll vertically over emotion card on the right of any non-index html page to see all rows of information (Write about it, Read about it, Hear about it).
+4. Scroll. Scroll horizontally over each row (Write about it, Read about it, Hear about it) to view all tiles in the row.
+5. Click. On any non-index page, click on an emotion bubble (e.g., Energetic, Creative, etc.) to view the card (displayed on the right) for that emotion.
+6. Click. Click the close button ("X") to navigate back to the main radial menu at index.html.
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. GSAP  
+   * It offers easy-to-implement animations of a wide variety, from scroll and hover to UI interactions. It is an industry-standard tool used by design-forward companies like Spotify and Google.
+   * I used it to add smooth hover interactions, page transitions, and animations (such as the menu scaling down and fading once a button is clicked).
+   * It adds seamless transitions between elements and creates a more visually pleasing experience. The site feels more connected and cohesive with the animations added.  
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+In iterating through my prototypes, I designed multiple viewing options for the emotions: the radial menu (showing only main emotion categories) and an expanded bubble view (showing all granular emotions). When it came to making my website, I focused only on the radial menu view because it is the most navigable and usable. While implementing my website, I also cut down on the amount of navigation within each emotion category, as I found in user testing and peer reviews that the hierarchy of emotions was a bit confusing. The new design takes users back to the main menu every time, allowing them to get their bearings and easily explore the different categories. 
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+The main challenge I experienced was creating a rotating radial menu. My vision was for one emotion to be highlighted/expanded into its sub-emotions as the menu rotated, but with my level of experience in coding, I had trouble figuring out how to rotate all the elements while maintaining equal spacing and upright text.
 
 ## Part 6: Generative AI Use and Reflection
 
-Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
-
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
-
 ### Usage Experiences by Project Aspects
 
-Feel free to edit the column \_ (other?) or add more columns if there's any other aspect in your project you've used the GenAI tools for.
+I did not use generative AI for this project. Relied on tutorials from GSAP for implementation and debugging.
 
-For the following aspects of your project, edit the corresponding table cell to answer:
-- *Usage*: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
-- *Productivity*: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
-
-| Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| Tool Name | Ratings | design | plan | write code | debug | 
+| :---- | :---- | :---- | :---- | :---- | :---- | 
+| Tool 1 | Usage | No | No | No | No | 
+| Tool 1 | Productivity | N/A | N/A | N/A | N/A | 
 
 
 ### Usage Reflection
@@ -94,6 +86,31 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
 2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
 
+## Appendix: WAVE Results
+
+#### Main Menu
+![Summary](images/WAVE-results-main-summary.png)
+![Details](images/WAVE-results-main-details.png)
+#### Joy
+![Summary](images/WAVE-results-joy-summary.png)
+![Details](images/WAVE-results-joy-details.png)
+#### Fear
+![Summary](images/WAVE-results-fear-summary.png)
+![Details](images/WAVE-results-fear-details.png)
+#### Sadness
+![Summary](images/WAVE-results-sadness-summary.png)
+![Details](images/WAVE-results-sadness-details.png)
+#### Disgust
+![Summary](images/WAVE-results-disgust-summary.png)
+![Details](images/WAVE-results-disgust-details.png)
+#### Anger
+![Summary](images/WAVE-results-anger-summary.png)
+![Details](images/WAVE-results-anger-details.png)
+#### Peace
+![Summary](images/WAVE-results-peace-summary.png)
+![Details](images/WAVE-results-peace-details.png)
+
+
 ---
 
 # **FP3 \- Final Project Check-in**
@@ -102,11 +119,11 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Implementation Plan Updates
 
-- [ ] ...
+- I have begun coding the HTML and CSS for the site and am about to get started adding JS. I still have to decide on a library to use for advanced animations. With all of the work due this week, it has been hard to stay on track according to the plan laid out in FP2.
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+- I have not used Gen AI as of yet.
 
 # **FP2 \- Evaluation of the Final project**
 
